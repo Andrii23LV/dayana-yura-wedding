@@ -134,10 +134,8 @@ export default function Home() {
 	return (
 		<main>
 			<div
-				style={{ backgroundImage: "url('/couple.png')", backgroundSize: 'cover' }}
-				className='h-screen max-h-[700px] w-full bg-center'
-			>
-			</div>
+				className='h-screen max-h-[700px] w-full bg-[url("/couple.png")] bg-cover bg-center'
+			></div>
 			<InviteHeader
 				guestsString={guestsString}
 				guestAmount={guestAmount}
