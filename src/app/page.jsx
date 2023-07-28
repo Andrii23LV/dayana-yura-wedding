@@ -133,7 +133,9 @@ export default function Home() {
 
 	return (
 		<main>
-			<div className='h-screen max-h-[700px] w-full bg-[url("/static/couple.png")] bg-cover bg-center'></div>
+			<section className='flex justify-center'>
+				<div className='h-screen max-h-[700px] max-w-[414px] w-full bg-[url("/static/couple.png")] bg-cover bg-center'></div>
+			</section>
 			<InviteHeader
 				guestsString={guestsString}
 				guestAmount={guestAmount}
