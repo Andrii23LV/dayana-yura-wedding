@@ -47,7 +47,7 @@ const ScheduleDetails = () => {
 					alt='location-restaurant'
 					className='rounded-xl my-5'
 				/>
-				<p className='text-center'>
+				<p className='text-center font-light text-sm'>
 					смт. Брюховичі, вул. Курортна, 8А Ресторан "Аркан" о 14:00
 				</p>
 
