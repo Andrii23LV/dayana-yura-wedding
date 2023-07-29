@@ -11,6 +11,8 @@ const FormComponent = ({
 	const someOne = formData.list.some((item) => item.name === 'Someone');
 	const moreThanOneChild = formData.list.filter((item) => item.age === 'child').length > 1;
 
+	const someOnePresent = formData.list.find((item) => item.name === 'Someone').present;
+
 	return (
 		<div className='flex flex-col items-center gap-5 p-10'>
 			<p className='text-center pb-5'>
@@ -114,7 +116,7 @@ const FormComponent = ({
 							<button
 								onClick={() => onSomeOnePresentChange(true)}
 								className={`px-5 h-10 rounded-md ${
-									formData.hotelNeeded
+									someOnePresent
 										? 'border border-green-500'
 										: 'bg-green-100 text-green-800'
 								}`}
@@ -124,9 +126,7 @@ const FormComponent = ({
 							<button
 								onClick={() => onSomeOnePresentChange(false)}
 								className={`px-5 h-10 rounded-md ${
-									!formData.hotelNeeded
-										? 'border border-red-500'
-										: 'border'
+									!someOnePresent ? 'border border-red-500' : 'border'
 								}`}
 							>
 								Ні
