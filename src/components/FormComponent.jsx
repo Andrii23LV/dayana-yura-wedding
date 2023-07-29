@@ -80,7 +80,9 @@ const FormComponent = ({
 
 			{formData.askAboutHotel && (
 				<div className='flex flex-row gap-5 justify-center w-full items-center'>
-					<p className='w-1/2 max-w-[250px]'>Чи потрібне Вам проживання?</p>
+					<p className='w-1/2 max-w-[250px]'>
+						Чи потрібно Вам забезпечити проживання на дату весілля?
+					</p>
 					<div className='w-[160px] flex justify-evenly'>
 						<button
 							onClick={() => onHotelNeededChange(true)}
