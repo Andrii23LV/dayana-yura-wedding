@@ -58,6 +58,19 @@ export default function Home() {
 		await updateGuestData({ ...formData, list: updatedList });
 	};
 
+	const handleSomeOnePresentChange = async (isPresent) => {
+		const updatedList = formData.list.map((item) => {
+			if (item.name === 'Someone') {
+				return { ...item, present: isPresent };
+			}
+			return item;
+		});
+
+		setFormData({ ...formData, list: updatedList });
+
+		await updateGuestData({ ...formData, list: updatedList });
+	};
+
 	const handleChildrenSitChange = async (isSitWithParents) => {
 		setFormData({
 			...formData,
@@ -149,6 +162,7 @@ export default function Home() {
 					handleChangeValue={handleChangeValue}
 					onSubmit={handleSubmitValue}
 					onPresentChange={handlePresentChange}
+					onSomeOnePresentChange={handleSomeOnePresentChange}
 					onChildrenSitChange={handleChildrenSitChange}
 					onHotelNeededChange={handleHotelNeededChange}
 				/>

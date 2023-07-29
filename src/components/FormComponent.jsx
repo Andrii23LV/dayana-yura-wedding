@@ -4,6 +4,7 @@ const FormComponent = ({
 	handleChangeValue,
 	onSubmit,
 	onPresentChange,
+	onSomeOnePresentChange,
 	onChildrenSitChange,
 	onHotelNeededChange,
 }) => {
@@ -111,7 +112,7 @@ const FormComponent = ({
 						<p className='w-1/2 max-w-[250px]'>Ваш "+1"?</p>
 						<div className='w-[160px] flex justify-evenly'>
 							<button
-								onClick={() => onHotelNeededChange(true)}
+								onClick={() => onSomeOnePresentChange(true)}
 								className={`px-5 h-10 rounded-md ${
 									formData.hotelNeeded
 										? 'border border-green-500'
@@ -121,7 +122,7 @@ const FormComponent = ({
 								Так
 							</button>
 							<button
-								onClick={() => onHotelNeededChange(false)}
+								onClick={() => onSomeOnePresentChange(false)}
 								className={`px-5 h-10 rounded-md ${
 									!formData.hotelNeeded
 										? 'border border-red-500'
