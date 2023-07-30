@@ -14,7 +14,7 @@ import InviteHeader from '@/components/InviteHeader';
 import Warning from '@/components/Warning';
 
 export default function Home() {
-	const targetDate = '2023-09-12T23:59:59';
+	const targetDate = '2023-09-09T12:00:00';
 
 	const searchParams = useSearchParams();
 
