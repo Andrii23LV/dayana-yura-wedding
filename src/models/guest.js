@@ -14,6 +14,14 @@ const GuestSchema = new Schema({
 				type: Boolean,
 				default: null,
 			},
+			age: {
+				type: String,
+				default: null,
+			},
+			_id: {
+				type: String,
+				default: null,
+			},
 		},
 	],
 	children: {
