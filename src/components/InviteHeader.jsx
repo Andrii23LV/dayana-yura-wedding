@@ -7,7 +7,7 @@ import { Caveat } from 'next/font/google';
 // If loading a variable font, you don't need to specify the font weight
 // const calligraphyFont = Caveat({ subsets: ['cyrillic-ext'], variable: '--font-caveat' });
 
-const InviteHeader = ({ guestsString, guestAmount, isSurname }) => {
+const InviteHeader = ({ guestsString, guestAmount, isSurname, surname }) => {
 	return (
 		<section className='px-10 py-10 flex flex-col items-center justify-center gap-5 min-h-screen bg-white'>
 			{isSurname ? (
@@ -27,9 +27,11 @@ const InviteHeader = ({ guestsString, guestAmount, isSurname }) => {
 			</p>
 			<h2 className='mt-5 text-orange-200'>ВЕРЕСЕНЬ 2023</h2>
 			<Calendar array={calendarArray} />
-			<p className='text-center mt-10'>
-				І ми не уявляємо цей радісний день без вас - близьких і дорогих нам людей!
-			</p>
+			{surname === 'Kret' ? null : (
+				<p className='text-center mt-10'>
+					І ми не уявляємо цей радісний день без вас - близьких і дорогих нам людей!
+				</p>
+			)}
 		</section>
 	);
 };

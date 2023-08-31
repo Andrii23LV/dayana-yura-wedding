@@ -172,7 +172,7 @@ const FormComponent = ({
 				</form>
 			) : null}
 			<p className='text-gray-400 italic font-thin text-sm'>
-				Прохання повідомити про присутність до 31-го серпня 2023 року
+				Прохання повідомити про присутність до 2-го вересня 2023 року
 			</p>
 		</div>
 	);

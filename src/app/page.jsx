@@ -155,6 +155,7 @@ export default function Home() {
 				guestsString={guestsString}
 				guestAmount={guestAmount}
 				isSurname={formData.list.length}
+				surname={surname}
 			/>
 			<ScheduleDetails />
 			{formData.list.length ? (
