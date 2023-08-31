@@ -146,7 +146,7 @@ export default function Home() {
 
 	return (
 		<main>
-			{surname === 'Spodaryk' && 'Kret' ? null : (
+			{surname === 'Spodaryk' || 'Kret' ? null : (
 				<section className='flex justify-center'>
 					<div className='h-screen max-h-[700px] max-w-[414px] w-full bg-[url("/static/couple.png")] bg-cover bg-center'></div>
 				</section>
